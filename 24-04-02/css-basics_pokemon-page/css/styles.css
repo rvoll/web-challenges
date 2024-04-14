@@ -53,8 +53,7 @@ h2 {
 
 /*
 .title {
-  /* your solution */
-}*/
+  your solution } */
 
 .title {
   background-color: white;
@@ -73,10 +72,8 @@ h2 {
 - Bonus:  The left border of the second section which contains a list of favourite Pokémon should have the color "gold". Hint: You may need a second CSS rule.
 */
 
-/*
-section {
-  /* your solution */
-}*/
+/*section {*/
+/* your solution */
 
 section {
   background-color: white;
@@ -87,7 +84,8 @@ section {
 
 *.favourites {
   border-left: solid 5px gold;
-}*
+}
+*
 
 
 /* ------- Headings Part 2 ------- */
@@ -102,8 +100,8 @@ section {
 
 /*
 .subtitle {
-  /* your solution */
-}*/
+  /* your solution }*/
+
 .subtitle {
   border-left: 3px solid gold;
   border-right: 3px solid gold;
@@ -121,18 +119,18 @@ section {
 /* Task 7: Last but not least! We want to style our list with our favorite Pokémon. Which selector do we need? And also add values for the padding. */
 /*
 /* add selector */
- {
-  list-style: "🧡";
-  padding-left: /* add value */ ;
-}
+/* .favourites {*/
+/*   list-style: "🧡";*/
+/*   padding-left: 20px/* add value ; */
+/* }*/
 
 /* add selector */
- {
-  padding-left: /* add value */ ;
-}
+/* .favourites {*/
+/*  {*/
+/*   padding-left: /* add value * ;/
+/* }*/
 
-
-
+/*This combines class and unordered/ordered list*/
 .favourites ul {
   list-style: "🧡";
   padding-left: 40px;
