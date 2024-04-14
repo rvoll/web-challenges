@@ -2,7 +2,8 @@
   Scroll down to the bottom of the file
   to see the instructions for this exercise.
    ⬇
-*/
+DONE!"
+   */
 
 *,
 *::before,
@@ -25,6 +26,27 @@ aside {
   border: 2px dotted lightslategray;
   border-radius: 4px;
   position: relative;
+}
+
+aside .user {
+  max-width: 250px;
+  margin: 24px auto;
+  padding: 12px 12px;
+  border: 2px dotted lightslategray;
+  border-radius: 4px;
+  position: relative;
+}
+
+aside .user .name {
+  font-size: 16px;
+}
+
+aside .user .bio {
+  font-size: 6px 0;
+}
+
+aside .user .location {
+  font-size: 10px;
 }
 
 ul {
@@ -69,13 +91,13 @@ ul .user .bio {
   display: none;
 }
 
-ul .user .location {text-align: left; color: darkslategray;}
-
-- align the .location to the left and set it's color to darkslategray
-
+ul .user .location {
+  text-align: left;
+  color: darkslategray;
+}
 
 /*
-  Part 1
+  Part 1 - DONE!
 
   Make .user elements inside the aside smaller:
     - reduce the max-width to 250px
@@ -95,7 +117,7 @@ ul .user .location {text-align: left; color: darkslategray;}
 */
 
 /*
-  Part 2
+  Part 2 - DONE
 
   For all .user elements inside an unordered list:
     - hide the .bio
