@@ -1,0 +1,9 @@
+/*HEADER - done*/
+h1 {
+  color: var(--header-text);
+  background-color: var(--header-bg);
+  display: flex;
+  height: 10vh;
+  width: 50vw;
+  padding: 20px;
+}
