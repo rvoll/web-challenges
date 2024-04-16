@@ -2,15 +2,15 @@
 //Ist es üblich, eine js-Datei mit 'console.clear();' anzufangen?
 console.clear();
 
-//warum brauche ich das? Weil es die buttons enthält? Muss man bei verschachtelten Elementen auch die äußeren definieren?
+//das brauche ich, weil es sich durch die Regel verändert
 const bodyElement = document.querySelector('[data-js="body"]');
 
 //die drei buttons werden als symbolische Konstanten definiert
 const darkMode = document.querySelector('[data-js="dark-mode-button"]');
 const lightMode = document.querySelector('[data-js="light-mode-button"]');
 const toggleButton = document.querySelector('[data-js="toggle-button"]');
-const textButton = document.querySelector('[data-js="text-button"]');
-const noTextButton = document.querySelector('[data-js="notext-button"]');
+//const textButton = document.querySelector('[data-js="text-button"]');
+//const noTextButton = document.querySelector('[data-js="notext-button"]');
 
 //zentrale Funktion, die Events und die dazugehörigen Aktionen registriert
 darkMode.addEventListener("click", () => {

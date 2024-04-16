@@ -1,6 +1,8 @@
 console.clear();
 
-// The exercise starts here!
+// DONE
+
+//The exercise starts here!
 
 // All console methods can be found on mdn for reference: https://developer.mozilla.org/en-US/docs/Web/API/console
 
