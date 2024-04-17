@@ -23,6 +23,12 @@ if (number % 2 === 0) {
 } else {
   console.log("odd number");
 }
+// also expressable as:
+if (number % 2) {
+  console.log("odd number");
+} else {
+  console.log("even number");
+}
 
 // Part 3: Hotdogs - DONE
 const numberOfHotdogs = 42;
@@ -36,6 +42,7 @@ if (numberOfHotdogs < 5) {
 } else {
   console.log("0.10 euro per hotdog");
 }
+//geht auch:   console.log(numberOfHotdogs * 2 + " euros");
 
 // Part 4: Daytime - DONE
 // - use a ternary operator to define the `statement` variable as follows:
@@ -51,6 +58,11 @@ console.log(statement);
 // Part 5: Greeting - DONE, copied from Elisabeth
 const userName = "Archibald";
 
-const greeting = "Hello " + (userName === "Andrea" ? "Coach!" : userName) + "!";
+const greeting = "Hello " + (userName === "Andrea" ? "Coach" : userName) + "!";
 
 console.log(greeting);
+
+// geht auch so (von Andrea):
+//const greeting1 =
+//userName === "Andrea" ? "Hello Coach!" : "Hello " + userName + "!";
+//console.log(greeting1);
