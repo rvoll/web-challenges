@@ -23,7 +23,7 @@ Make sure that everything still looks the same as before.
 
 Switch to the `./css/styles.css` file create some custom properties!
 
-## Bonus - NOT DONE YET
+## Bonus - DONE - wobei mir die Zusammenhänge nicht aufgefallen sind
 
 Check the stylesheet for other values that might warrant extraction. One example may be the border radius of `4px`. But you might find other things, too like letter spacing, spaces (8px, 16px, 32px), etc..
 
