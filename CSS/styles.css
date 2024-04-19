@@ -1,0 +1,37 @@
+*, *:befroe, *:after {
+    box-sizing: border-box;}
+
+body {
+  background-color: rgb(239, 192, 116);
+}
+/*  display: flex;
+  row-gap: 60px;*/
+
+.boxButtonsApart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: #33ac35;
+  border-radius: 6px;
+  width: 95%;
+  margin: 20px;
+  height: 5rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap
+}
+
+.button {
+  background-color: rgb(8, 117, 185);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 3rem;
+  /*1st version
+  width: 40px;*/
+/*2nd version*/
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+}
