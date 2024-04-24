@@ -11,13 +11,31 @@ Switch to the [`index.html`](./index.html) file and make the form accessible!
 ## Questions to guide you:
 
 - How do you connect a form with its headline?
+  <!-- von Isabell: -->
+    <!-- <h1 id="title" class="title">Understanding A11y in Forms</h1>
+  
+        <form aria-labelledby="title" aria-describedby="description" for="title"> -->
+
 - How do you link a description to a specific <fieldset> element?
+
+<!-- mein Versuch: -->
+<!--         <fieldset aria-describedby="description">
+ -->
+
 - Do all interactive fields have their own label?
+
+<!-- I added one -->
+
 - Are all labels linked to their interactive fields with the help of the correct attributes?
+
+<!-- I linked them using for=. -->
+
 - Does this connections works correctly?
   - To check this, go to your browser and click on the label; the corresponding input field should now be focused.
   - If not, did we make a spelling mistake?
+  <!-- All working now -->
 - Do we need the given placeholder?
+  <!-- NO -->
 
 ## Development
 
