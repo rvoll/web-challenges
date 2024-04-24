@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h2 id="pageTitle">Create your Personal Profile</h2>
+    <section>
+      <form>
+        <p>
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset>
+          <legend id="persInfoTitle">Personal Information</legend>
+          <label for="input-firstname">First Name:</label>
+          <input id="input-firstname" type="text" />
+          <label for="input-lastname">Last Name:</label>
+          <input id="input-lastname" type="text" />
+          <label for="input-lastname">Your Birthday:</label>
+          <input id="input-lastname" type="date" />
+        </fieldset>
+        <p>
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset>
+          <legend id="furtherInfoTitle">Further Information</legend>
+
+          <label for="input-favouriteColor">Favourite Color:</label>
+          <input
+            id="input-favouriteColor"
+            type="color"
+            name="colorPicker"
+            value="#E5430F"
+          />
+          <label for="input-favouritePet">What's your favourite pet?</label>
+          <!-- <input id="input-favouritePet" type="text" name="pet" /> -->
+          <select name="pet" id="selectPet">
+            <option value="">---Choose an animal!---</option>
+            <option value="abra">Abra cadabra</option>
+            <option value="chicken">Chicken Turtle</option>
+            <option value="egg">Fried Egg Jellyfish</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
