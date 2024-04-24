@@ -8,6 +8,8 @@ They should return the result of the respective calculation:
 - multiply: the product of the numbers
 - divide: the division of the two numbers
 - remainder: the modulo or remainder of of "a modulo b"
+
+// ALL DONE - WITH HELP? DON't remember.
 */
 
 // Code here
@@ -17,10 +19,10 @@ function add(a, b) {
 }
 // auch möglich: return a + b (statt const und return), a la Elisabeth
 
+// Code here
 function subtract(a, b) {
-  // Code here
-  const subtraction = a - b;
-  return subtraction;
+  const difference = a - b;
+  return difference;
 }
 
 function multiply(a, b) {
