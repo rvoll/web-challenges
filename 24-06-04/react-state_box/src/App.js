@@ -2,12 +2,12 @@ import "./styles.css";
 import { useState } from "react";
 
 export default function App() {
-  const [isActive, setIsActive] = useState(false);
   // let isActive = false;
 
   // Instead of let, consider the useState function.
   // Don't forget to import the function.
   // The initial state value should be false.
+  const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive(!isActive);
@@ -15,15 +15,12 @@ export default function App() {
     console.log(isActive);
   }
 
+  // für die Bonusaufgabe nur hier reinschreiben:
+  // Ternary operator:
   return (
     <main>
       <div className={`box ${isActive ? "box--active" : ""}`} />
-      <button
-        // für die Bonusaufgabe nur hier reinschreiben:
-        // Ternary operator:
-
-        onClick={handleClick}
-      >
+      <button onClick={handleClick}>
         {isActive ? "Deactivate" : "Activate"}
       </button>
     </main>
