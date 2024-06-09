@@ -2,6 +2,7 @@
 import Image from "./Image";
 // import logo from "../img/logo.jpg";
 // import avatar from "../img/avatar.jpg";
+//
 
 export default function Avatar() {
   return (
