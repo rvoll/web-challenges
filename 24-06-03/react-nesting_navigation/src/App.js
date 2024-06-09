@@ -2,53 +2,58 @@ import "./styles.css";
 // neu, von mir:
 import Header from "./components/Header";
 import Image from "./components/Image";
+import Navigation from "./components/Navigation";
+import Link from "./components/Link";
+import Logo from "./components/Logo";
+import Avatar from "./components/Avatar";
+
 //
 import avatar from "./img/avatar.jpg";
 import logo from "./img/logo.jpg";
 
+// PROBLEM:
+// ran into a problem creating Link, Logo and Avatar;
+// don't know what the problem is;
+// will take time to do this later and rather
+// do the State challenges now.
+// This is a pain to ask chat GPT because of the various
+// component folders...
 export default function App() {
   return (
-    <>
+    <body>
       <Header>
-        {/* das image ist raus: */}
-        <a href="#">
+        <Link href="#">
           <Image src={logo} alt="logo" />
-        </a>
-        <nav>
-          <a className="navigation__link" href="#home">
+        </Link>
+        <Navigation>
+          <Link className="navigation__link" href="#home">
             Home
-          </a>
-          <a className="navigation__link" href="#about">
+          </Link>
+          <Link className="navigation__link" href="#about">
             About
-          </a>
-          <a className="navigation__link" href="#impressum">
+          </Link>
+          <Link className="navigation__link" href="#impressum">
             Impressum
-          </a>
-        </nav>
-        {/* das hierüber muss raus: */}
-        <button
-          type="button"
-          onClick={() => console.log("I could toggle a profile!")}
-          aria-label="toggle profile"
-        >
-          <img className="round-image" src={avatar} alt="avatar" />
-        </button>
+          </Link>
+        </Navigation>
+        <Avatar></Avatar>
       </Header>
       <main>content goes here…</main>
-    </>
+    </body>
   );
 }
-
-// ### 1. Header component
-
-// Task: Outsource the `<header>` into ya `Header` component.
-
-//   - Export a `Header` component which returns the same
-//   `<header></header>` element as in the `App.js` file.//
-// How???
+// replaced by Avatar:
 //
-// - Don't forget the `className` attribute.
-//   - The function should receive a `children` prop
-//   and render it between the opening and closing `<header>` tags.
-// - In the `App.js` file, import the `Header` component
-// and replace the `<header></header>` tags with it.
+//<button
+//type="button"
+//onClick={() => console.log("I could toggle a profile!")}
+//aria-label="toggle profile"
+//>
+//<Image className="round-image" src={avatar} alt="avatar" />
+//</button> */}
+
+// Anm.1: Strange. The wrapper <Navigation> draws a box
+// around the nav bar which nav did not do.
+// Why is this so?
+
+// I guess this is not so important.
