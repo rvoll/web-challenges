@@ -1,98 +1,67 @@
 import React from "react";
 import "./styles.css";
+// import react function useState:
 import { useState } from "react";
 
 export default function App() {
-  // declare a state variable: DONE
+  // declare a state variable:
   const [code, setCode] = useState("");
-  // ersetzt: let code = "?";
-  //
-  //probiert zu checken mit console.log:
-  // console.log(code);
-  // warum funktioniert der console.log nicht?
+  // [] stands for an empty string; would "" be fine, too?
+  console.log("code 1: ", code);
   const validCode = "🐡🐠🐋";
 
-  // HIER WEITER!!!
-  // HIER WEITER!!!
-  // HIER WEITER!!!
   // Write a handleClick function that updates
   // the state variable according to
   // which emoji button was clicked.
-  // Hint: event.target.textContent
-  // (use code + event.target.textContent
-  //   to append the new emoji)
-  // HIER WEITER!!!
 
-  // IST DAS HIER DER RICHTIGE ORT?
-  // GLAUB JA. WIE IN DER DEMO 1.
-  // NEIN!!! NOCHMAL NACHGUCKEN!!!
-  //
-  // HIER WEITER!!!
-  // HIER WEITER!!!
-  // HIER WEITER!!!
-  //
-  // function handleClick() {
-  //   const nextCount = count + 1;
-
-  //   // setCount(count + 1);
-  //   setCount(nextCount);
-
-  //   console.log('LOG--2: button click:', nextCount);
-  // }
-  function handleClick() {
-    // 3 Zeilen aus der Demo 1:
-    // const nextCount = count + 1;
-    // // setCount(count + 1);
-    // setCount(nextCount);
-    // funktioniert nicht;
-    // Fehlermeldung: "count and setCount not not defined!""
+  // corrected - I did not have event in here
+  // and had thus also wrongly changed it in the setCode function
+  function handleClick(event) {
+    // update state variable according to which button was clicked
+    // Hint: event.target.textContent
+    // (use code + event.target.textContent
+    //   to append the new emoji)
+    setCode(code + event.target.textContent);
+    console.log("code 2: ", code);
   }
-  //
+  // I had approached it this way round
+  // (because I did not read the instructions properly!!!):
+  // if aria-label="Pufferfish" > {code} + "🐡",
+  // if aria-label="Whale" > {code} + "🐋",
+  // if aria-label="Clownfish" > {code} + "🐠"}
 
+  // von Elisabeth (not part of the instructions;
+  // is used to make the reset button work):
+  function handleReset() {
+    setCode("");
+  }
+
+  // in order to give the buttons the functions above,
+  // replace onClick with 'onClick={handleClick}'
+  // and 'onClick={handleReset}', respectively
+  //  in the return statement
   return (
     <div className="container">
       <div className="button-container">
-        <button
-          type="button"
-          onClick={() => {
-            console.log("Update Code!");
-          }}
-        >
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Pufferfish">
             🐡
           </span>
         </button>
-        <button
-          type="button"
-          onClick={() => {
-            console.log("Update Code!");
-          }}
-        >
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Whale">
             🐋
           </span>
         </button>
-        <button
-          type="button"
-          onClick={() => {
-            console.log("Update Code!");
-          }}
-        >
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Clownfish">
             🐠
           </span>
         </button>{" "}
       </div>
-
-      <button
-        type="button"
-        onClick={() => {
-          console.log("Reset Code!");
-        }}
-      >
+      <button type="button" onClick={handleReset}>
         Reset
       </button>
-
       {code === validCode && <p>Valid code!</p>}
     </div>
   );
