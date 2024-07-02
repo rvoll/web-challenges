@@ -11,6 +11,7 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
     line-height: 1.5;
+    background-color: lightblue;
   }
 
   main {
