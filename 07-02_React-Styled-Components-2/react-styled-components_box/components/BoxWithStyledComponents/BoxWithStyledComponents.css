@@ -1,0 +1,14 @@
+.box-with-styled-components {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 2rem;
+}
+
+.box-with-styled-components:hover {
+  background-color: red;
+}
+
+.box-with-styled-components--black {
+  background-color: black;
+}
