@@ -1,21 +1,20 @@
 import { getAllProducts } from "/services/productServices.js";
 
-// LIT für nachher (Tip von Laura): HO React data fetching "loading an error state"
-
 export default function handler(request, response) {
   if (request.method === "GET") {
     const products = getAllProducts();
     console.log("products: ", products);
-    // Was macht diese Zeile?
     response.status(200).json(products);
-    // das hatte noch gefehlt:
     return;
   } else {
     response.status(405).json({ message: "METHOD NOT ALLOWED" });
   }
 }
 
+// ===========================
 //  Comments:
+
+//    LIT für später: HO React data fetching "loading an error state"
 
 //  *)
 //   so funktioniert die exp.def.function:
