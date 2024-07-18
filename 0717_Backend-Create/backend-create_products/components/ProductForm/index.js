@@ -1,5 +1,12 @@
+// Your task is to fetch your new POST route and send the data
+// to your database.
+// After that use mutate from useSWR
+// to refetch the data from the database.
+
 import { StyledForm, StyledHeading, StyledLabel } from "./ProductForm.styled";
 import { StyledButton } from "../Button/Button.styled";
+
+const { mutate } = useSWR("/api/products/");
 
 export default function ProductForm() {
   async function handleSubmit(event) {

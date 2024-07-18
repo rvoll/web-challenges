@@ -28,10 +28,9 @@ export default async function handler(request, response) {
   }
 }
 
-// =============================================
-// NOW: >>> Send a POST request <<<
-
+// ---------------------------------------------
 // DONE:
+
 // write the code for the request.method POST :
 
 // Use a try...catch block.
