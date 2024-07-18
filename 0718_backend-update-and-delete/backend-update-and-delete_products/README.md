@@ -39,6 +39,8 @@ Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write
 - _Wait_ for `Product.findByIdAndUpdate(id, updatedProduct)`.
 - Respond with a status `200` and the message `{ status: "Product successfully updated." }`.
 
+#### >>> Das hier drüber habe ich gemacht - muss es aber nochmal durch checken - ist evtl. mnicht ganz okay so. Danach weiter... <<<
+
 #### Refactor the `ProductForm` component
 
 For now, the `ProductForm` component sends a `POST` request to your database. We want to reuse the component for editing products and sending `PUT` requests as well.
