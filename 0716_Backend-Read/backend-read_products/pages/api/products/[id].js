@@ -6,7 +6,10 @@ export default async function handler(request, response) {
   await dbConnect();
   const { id } = request.query;
 
-  // this line was missing:
+  // in the right place, here?
+  const product = await Product.findById(id).populate("reviews");
+
+  // this line had been missing earlier:
   if (request.method === "GET") {
     // and here 'await' was missing:
     const product = await Product.findById(id);

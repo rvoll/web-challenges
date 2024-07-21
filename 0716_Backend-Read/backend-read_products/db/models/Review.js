@@ -12,10 +12,6 @@ const Review = mongoose.models.Review || mongoose.model("Review", reviewSchema);
 
 export default Review;
 
-// _id: { type: String, required: true },
-// type: String?
-// or  _id: { type: mongoose.Schema.Types.ObjectId, required: true },
+// _id: { type: mongoose.Schema.Types.ObjectId, required: true },
 // MongoDB's ObjectId type.
-// (Chat GPT)
-// Shouldn't be here but
-// why is the _id left out?
+// see Product.js

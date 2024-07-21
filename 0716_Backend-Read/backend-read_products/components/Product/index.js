@@ -17,6 +17,13 @@ export default function Product() {
     return;
   }
 
+  // ============= HIER WEITER: ==============
+  // Inside of the return statement,
+  // check whether the fetched `data` contain any reviews
+  // and if so, display them.
+  // - Feel free to decide which part
+  // of the review data you want to display.
+
   return (
     <ProductCard>
       <h2>{data.name}</h2>
