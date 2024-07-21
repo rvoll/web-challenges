@@ -17,7 +17,7 @@ export default async function handler(request, response) {
     // else {
     response.status(200).json(product);
     // }
-    // why are these not correct here?
+    // why are these lines above not correct here?
   } else {
     response.status(405).json({ mesage: "METHOD NOT ALLOWED" });
   }
