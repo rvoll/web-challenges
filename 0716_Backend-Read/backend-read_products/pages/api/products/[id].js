@@ -1,13 +1,24 @@
-import { products } from "../../../lib/products";
+// import { products } from "@/lib/products";
+import dbConnect from "@/db/connect.js";
+import Product from "@/db/models/Product.js";
 
-export default function handler(request, response) {
+export default async function handler(request, response) {
+  await dbConnect();
   const { id } = request.query;
 
-  const product = products.find((product) => product.id === id);
+  // this line was missing:
+  if (request.method === "GET") {
+    // and here 'await' was missing:
+    const product = await Product.findById(id);
 
-  if (!product) {
-    return response.status(404).json({ status: "Not Found" });
+    if (!product) {
+      return response.status(404).json({ status: "Not Found" });
+    }
+    // else {
+    response.status(200).json(product);
+    // }
+    // why are these not correct here?
+  } else {
+    response.status(405).json({ mesage: "METHOD NOT ALLOWED" });
   }
-
-  response.status(200).json(product);
 }
