@@ -3,15 +3,15 @@ import useSWR from "swr";
 // see HO-React data fetching (and HO JS-fetch)
 const fetcher = (...args) => fetch(...args).then((response) => response.json());
 
-function Products() {
+//   Map over the fetched data object to create a list
+//   of all products where you display their information.
+
+export default function Products() {
   const { data, error } = useSWR("/api/products", fetcher);
 
   if (error) return <div>Failed to load.</div>;
 
   if (!data) return <div>Loading...</div>;
-
-  //   Map over the fetched data object to create a list
-  //   of all products where you display their information.
 
   return (
     <div>
