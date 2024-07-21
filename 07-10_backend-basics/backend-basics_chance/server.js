@@ -3,23 +3,21 @@ import Chance from "chance";
 
 const chance = new Chance();
 
-const age = chance.age();
-const name = chance.name();
+const age = chance.age({ type: "senior" });
+const name = chance.name({ nationality: "it" });
 const profession = chance.profession();
+const sentence = chance.sentence();
 
 console.log(name);
 console.log(age);
 console.log(profession);
 
-// Whyis the code at the bottom not working?
+// Why does the code at the bottom not work?
 
 export const server = createServer((request, response) => {
-  // Question:
-  // apparently the line below (the "status code") is very important;
-  // but what does it do?
   response.statusCode = 200;
   response.end(
-    `Ohy mate. The other day I met a person called ${name}. The person is ${age} years old.`
+    `Ohy mate! Do you know anyone called ${name}, around ${age} years old, who used to work as a ${profession}?`
   );
 });
 
