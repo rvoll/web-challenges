@@ -23,7 +23,7 @@ export default function Product() {
   // and if so, display them.
   // - Feel free to decide which part
   // of the review data you want to display.
-
+  // =========================================
   return (
     <ProductCard>
       <h2>{data.name}</h2>
