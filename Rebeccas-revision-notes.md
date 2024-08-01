@@ -1,5 +1,18 @@
 # Rebeccas-revision-notes
 
+## What I just did (in case it's wrong)
+
+- in the `package.json` in `react-basics_hello-world-1` I modified the following line:
+
+`"scripts": {
+    "start": "node start.js"
+    // "start": "react-scripts start"
+  },`
+
+because npm run start would render an error message. ChatGPT's idea.
+
+=> didn't work; undid it
+
 ## React-specific stuff
 
 - install the dependencies using `npm i` first (to work locally)
