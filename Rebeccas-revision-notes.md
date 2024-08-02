@@ -1,17 +1,23 @@
 # Rebeccas-revision-notes
 
+## Revision progress
+
+### DONE:
+
+- completed 0529_react-basics (3 challenges)
+
+### DO NEXT:
+
+- read React Basics Handout and revise HTML: \
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element \
+  and JSX: \
+  https://react.dev/learn/writing-markup-with-jsx
+
+### LEFT TO DO:
+
+- 0530 - 0722, i.e. more than 17 days&apos; challenges
+
 ## What I just did (in case it's wrong)
-
-- in the `package.json` in `react-basics_hello-world-1` I modified the following line:
-
-`"scripts": {
-    "start": "node start.js"
-    // "start": "react-scripts start"
-  },`
-
-because npm run start would render an error message. ChatGPT's idea.
-
-=> didn't work; undid it
 
 ## React-specific stuff
 
