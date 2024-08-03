@@ -11,7 +11,7 @@ function Greeting({ name }) {
   return (
     <h1>
       Hey there {isCoach ? "Coach" : isRebecca ? "Rebecca" : "stranger"},
-      how&apos;s it going?
+      how&#39;s it going?
     </h1>
   );
 }
