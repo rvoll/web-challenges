@@ -10,11 +10,15 @@
 
 ### DO NEXT:
 
-- solve challenges 0530_react-props
+- solve challenges 0603_react-nesting
 
 - if time permits:
 
-  - read React Basics and React Props Handouts
+  - read Handouts:
+
+    - React Basics
+    - React Props
+    - React Nesting
 
   - revise HTML: \
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element \
