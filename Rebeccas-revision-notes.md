@@ -10,7 +10,10 @@
 
 ### DO NEXT:
 
-- solve challenges 0603_react-nesting
+> <span style="color:orange">**FINISH CHALLENGE 0603_react-nesting_navigation:
+> logo and avatar !**</span>
+
+Right now there is a problem in the code; I stopped in the middle of it because I'm meeting a friend.
 
 - if time permits:
 
@@ -169,7 +172,7 @@ Here’s how you can do it:
 - **border-radius**:
   Haven't managed yet to include border-radius in the props.
 
-### Conditional Rendering (with props)
+#### Conditional Rendering (with props)
 
 - You can use props to conditionally render parts of a component.
 
@@ -200,6 +203,41 @@ _You can use an if statement outside of the JSX though:_
     </div>
   );
 }`
+
+#### The `children` Prop
+
+Oftentimes you'd want your own components to be nestable as well.
+
+```js
+<UserCard>
+  <Avatar />
+</UserCard>
+```
+
+If you nest a component inside of another component, the nested component is passed as a prop to the parent component. This special prop is called `children`.
+
+```jsx
+function UserCard({ children }) {
+  return <div className="card">{children}</div>;
+}
+```
+
+This component will render the nested element(s) as a child of the `div` element.
+
+> 💡 The nested element(s) can be a single element, multiple elements, or even a string or number.
+
+> 📙 Read more about [**Passing JSX as children**
+> in the React Docs](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children).
+
+### Fragments
+
+- a flexbox refers only to its direct child elements; however, using a `<div>` element in `Boxes` creates a new layer so that the three `Box` elements are no longer flex items!
+
+  Use the developer tools of your browser to check this fact.
+
+  To fix this, replace the `<div>` with fragments `<></>`: they won't create an HTML element and thus break the layout!
+
+> 💡 Layout with flexbox is not the only reason for using fragments, but it's an easy-to-understand example. In general, fragments are a great way to avoid unnecessary `<div>` clutter.
 
 ## HTML
 
