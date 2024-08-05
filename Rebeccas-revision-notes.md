@@ -10,18 +10,17 @@
 
 ### DO NEXT:
 
-> <span style="color:orange">**FINISH CHALLENGE 0603_react-nesting_navigation:
-> logo and avatar !**</span>
+> do `0604_react-state-2` challenges
 
-Right now there is a problem in the code; I stopped in the middle of it because I'm meeting a friend.
-
-- if time permits:
+- If time allows:
 
   - read Handouts:
 
     - React Basics
     - React Props
     - React Nesting
+    - React State 1
+    - React State 2
 
   - revise HTML: \
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element \
@@ -29,6 +28,10 @@ Right now there is a problem in the code; I stopped in the middle of it because 
     https://react.dev/learn/writing-markup-with-jsx
 
 ### Just DONE:
+
+- completed 0604_react-state-1
+
+- completed 0603_react-nesting (4 challenges - 3 tiny ones and a very big one)
 
 - completed 0530_react-props (4 challenges); took me ages and I didn't really solve the forth challenge: `053/react-props_button`
 
@@ -43,6 +46,26 @@ Right now there is a problem in the code; I stopped in the middle of it because 
 - 0530 - 0722, i.e. more than 17 days&apos; challenges: 50 - 60
 
 ## What I just did (in case it's wrong)
+
+## Fehler in den Challenges und Handouts
+
+- **JS Inputs and Strings**
+
+**string concatenation**
+should be: **string concatenation**
+
+- **react-state_emoji-checker**
+  Each button click should **_"lock in"_** one emoji.
+
+  should be: Each button click should **_"log in"_** one emoji.
+
+- **Challenges: React State 1, Journal App Favorite Button**
+
+  a button that allows you to **favorite** an entry.
+
+  should be: a button that allows you to **mark an entry as favorite** an entry.
+
+  (One could think one could say: "a button that allows you to **favor** an entry", but that would rather mean that the button would actually _allow_ you to like this entry more than the others.)
 
 ## General Stuff
 
@@ -255,3 +278,99 @@ apostrophe / &#39;
 | Target        | Shortcut |
 | ------------- | -------- |
 | Emoji-palette | Fn-E     |
+
+## State in React
+
+In React we work with state by using the `useState` hook function.
+
+We call the `useState` function and pass the **initial state** value as argument. This is the value
+that is used in our app until something changes.
+
+Calling the `useState` function gives us two things in return:
+
+- a variable with the **current state** as value
+- the `set` function to set a **new state**
+
+```js
+import { useState } from "react";
+
+function SocialMediaPost() {
+  const [liked, setLiked] = useState(false);
+
+  function toggleLiked() {
+    setLiked(!liked);
+  }
+
+  return (
+    <article>
+      <p>Liked: {liked ? "Yes" : "No"}</p>
+      <button type="button" onClick={toggleLiked}>
+        {liked ? "Remove like" : "Add like"}
+      </button>
+    </article>
+  );
+}
+```
+
+> 💡 There is a naming convention for React apps that the state variable and the function always
+> follow the pattern of `x` and `setX`
+
+In React state is encapsulated per instance of a component. A React component can have multiple states. You can use the `useState` function as much as you need.
+
+You can store all kinds of data in state (like booleans, numbers, strings, objects or arrays).
+
+```
+import { useState } from "react";
+
+function SocialMediaPost() {
+  const [liked, setLiked] = useState(false);
+  const [comments, setComments] = useState([]);
+  const [views, setViews] = useState(0);
+
+  /* ... */
+
+  return <article>{/* ... */}</article>;
+}
+```
+
+## Template literals
+
+- search in the neueFische Handouts!
+
+  > Maybe JS... ?!
+
+Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+## String concatenation
+
+- see Handout **JS Inputs and Strings**:
+
+Strings can be chained together by using the + operator (yes, the same as the maths operator). This is called string concatination:
+
+const name = "Alex";
+const stringConcatination = "Hello " + name + ", good to see you!";
+
+### Embedding JavaScript
+
+Inside a template literal, you can wrap JavaScript variables or expressions inside ${ }, and the result will be included in the string:
+
+```
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting); // "Hello, Chris"
+```
+
+You can use the same technique to join together two variables:
+
+```
+const one = "Hello, ";
+const two = "how are you?";
+const joined = `${one}${two}`;
+console.log(joined); // "Hello, how are you?"
+```
+
+Joining strings together like this is called concatenation.
+
+(https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings)
+or - different from what we did: (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
