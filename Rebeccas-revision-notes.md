@@ -10,7 +10,11 @@
 
 ### DO NEXT:
 
-> do `0604_react-state-2` challenges
+> do `???_react-with-arrays` challenges
+
+> after that do `0604_react-state-2` and `state-3` challenges
+
+> pay attention to order!
 
 - If time allows:
 
