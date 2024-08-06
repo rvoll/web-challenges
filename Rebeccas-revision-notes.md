@@ -8,6 +8,16 @@
 
   ...only made it peeping at Sabeth's code; still not sure what was actually the problem!!!
 
+- 0605/react-with-arrays/react-with-arrays_fruits
+
+...only with help from Chatty;
+
+**Difficulties:**
+
+- understanding the general structure and knowing where exactly to use the array method .map() - _here in App.js_
+
+- with Template Literals: How to use backticks and ${}
+
 ### DO NEXT:
 
 > do `???_react-with-arrays` challenges
@@ -337,18 +347,23 @@ function SocialMediaPost() {
 }
 ```
 
-## Template literals
+## String interpolation, Template literals, back tics: `` and '$'
 
-- search in the neueFische Handouts!
+- see Handout [**JS Inputs and Strings**](https://github.com/neuefische/hh-web-24-3/blob/main/sessions/js-inputs-and-strings/js-inputs-and-strings.md):
 
-  > Maybe JS... ?!
+The third method to write strings
+(namely `string`: back ticks or template literals.)
+has the useful property that you can insert variables into the string by wrapping placeholders with a dollar sign and curly brackets ${} . This is also called string interpolation.
 
-Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
-(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+This way you don't have to concat multiple strings if you want to use a variable in your string:
+
+> const stringConcatination = "Hello " + name + ", good to see you!";
+
+> const withTemplateString = `Hello ${name}, good to see you!`;
 
 ## String concatenation
 
-- see Handout **JS Inputs and Strings**:
+- see Handout [**JS Inputs and Strings**](https://github.com/neuefische/hh-web-24-3/blob/main/sessions/js-inputs-and-strings/js-inputs-and-strings.md):
 
 Strings can be chained together by using the + operator (yes, the same as the maths operator). This is called string concatination:
 
