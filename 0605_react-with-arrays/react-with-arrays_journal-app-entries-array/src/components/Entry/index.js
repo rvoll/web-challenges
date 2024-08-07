@@ -1,7 +1,7 @@
 import FavoriteButton from "../FavoriteButton";
 import "./Entry.css";
-import Divider from "../Divider";
 import { Fragment } from "react";
+import Divider from "../Divider";
 
 // last Question LEFT to DO:
 // >>> I think I must use Fragment and Divider in the ENTRY component!
@@ -15,6 +15,10 @@ import { Fragment } from "react";
 // 😊 Now, the only thing left is to make the divider (see below!) conditional!
 
 export default function Entry({ motto, notes, date, id }) {
+  // function Divide(id){
+  //   id === smallestId ? => <Divider /> : ""
+  // }
+
   return (
     <Fragment key={id}>
       <article className="entry">

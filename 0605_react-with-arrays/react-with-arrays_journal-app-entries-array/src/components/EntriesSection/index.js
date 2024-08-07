@@ -3,6 +3,8 @@ import Entry from "../Entry";
 import Tabs from "../Tabs";
 import Tab from "../Tab";
 import Badge from "../Badge";
+// import { Fragment } from "react";
+// import Divider from "../Divider";
 
 // last Question LEFT to DO:
 //
@@ -61,8 +63,26 @@ export default function EntriesSection() {
           {entries.map(({ id, date, motto, notes }) => (
             <Entry key={id} date={date} motto={motto} notes={notes} />
           ))}
+          {/* von Sabeth: */}
+          {/* Hiermit funktioniert es mit Dividers nur _zwischen_ den Einträgen. */}
+          {/* {entries.map((entry, index) => {
+            return (
+              <Fragment key={entry.id}>
+                <Entry
+                  date={entry.date}
+                  motto={entry.motto}
+                  notes={entry.notes}
+                />
+                {index < entries.length - 1 && <Divider />}
+              </Fragment>
+            );
+          })} */}
+          {/*  */}
         </div>
+        {/* <Divider /> */}
       </section>
     </>
   );
 }
+
+// {{ id } === 997 ? "" : <Divider />}
