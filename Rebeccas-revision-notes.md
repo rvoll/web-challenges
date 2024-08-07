@@ -2,25 +2,15 @@
 
 ## Revision progress
 
-### Unresolved Issues
-
-- `053/react-props_button`
-
-  ...only made it peeping at Sabeth's code; still not sure what was actually the problem!!!
-
-- 0605/react-with-arrays/react-with-arrays_fruits
-
-...only with help from Chatty;
-
-**Difficulties:**
-
-- understanding the general structure and knowing where exactly to use the array method .map() - _here in App.js_
-
-- with Template Literals: How to use backticks and ${}
-
 ### DO NEXT:
 
-> do `???_react-with-arrays` challenges
+- remaining question from `0605_react-with-arrays/react-with-arrays_journal-app-entries-array`:
+
+> If you are using this template: How can you render a <Divider /> component between each entry?
+> Don't break the flexbox layout (a Fragment might help)
+> Avoid having a divider below the last or above the first entry
+
+- do `0605_react-with-arrays` challenges, fruits DONE, `journal-app-entries-array` almost DONE, see above
 
 > after that do `0604_react-state-2` and `state-3` challenges
 
@@ -40,6 +30,22 @@
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element \
   - revise JSX: \
     https://react.dev/learn/writing-markup-with-jsx
+
+### Unresolved Issues
+
+- `053/react-props_button`
+
+  ...only made it peeping at Sabeth's code; still not sure what was actually the problem!!!
+
+- `0605/react-with-arrays/react-with-arrays_fruits`
+
+...only with help from Chatty;
+
+**Difficulties:**
+
+- understanding the general structure and knowing where exactly to use the array method .map() - _here in App.js_
+
+- with Template Literals: How to use backticks and ${}
 
 ### Just DONE:
 

@@ -6,11 +6,11 @@ import Badge from "../Badge";
 
 // last Question LEFT to DO:
 //
-// If you are using this template:
+// (If you are using this template:
 // How can you render a <Divider /> component between each entry?
-// Don't break the flexbox layout (a Fragment might help)
+// Don't break the flexbox layout (a Fragment might help) - DONE.)
 //
-// Avoid having a divider below the last or above the first entry
+// >>> Avoid having a divider below the last or above the first entry
 //
 // >>> I must use Fragment and Divider in the ENTRY component!
 // Go there...
@@ -57,7 +57,6 @@ export default function EntriesSection() {
             Favorites <Badge>1</Badge>
           </Tab>
         </Tabs>
-        {/* <Fragment> */}
         <div className="entries-section__entries">
           {entries.map(({ id, date, motto, notes }) => (
             <Entry key={id} date={date} motto={motto} notes={notes} />
