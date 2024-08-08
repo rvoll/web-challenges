@@ -5,21 +5,10 @@ import { useState } from "react";
 
 export default function App() {
   const [people, setPeople] = useState(0);
-
-  function handleAdd() {
-    setPeople(people + 1);
-  }
-
-  function handleSubtract() {
-    {
-      people > 0 && setPeople(people - 1);
-    }
-  }
-
   return (
     <div className="container">
       <h1>Place a Table Reservation</h1>
-      <Counter onAdd={handleAdd} onSubtract={handleSubtract} />
+      <Counter people={people} setPeople={setPeople} />
       <p>You are going to reserve a table for {people} people.</p>
     </div>
   );
