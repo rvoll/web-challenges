@@ -4,12 +4,6 @@
 
 ### DO NEXT:
 
-- remaining question from `0605_react-with-arrays/react-with-arrays_journal-app-entries-array`:
-
-> If you are using this template: How can you render a <Divider /> component between each entry?
-> Don't break the flexbox layout (a Fragment might help)
-> Avoid having a divider below the last or above the first entry
-
 - do `0605_react-with-arrays` challenges, fruits DONE, `journal-app-entries-array` almost DONE, see above
 
 > after that do `0604_react-state-2` and `state-3` challenges
@@ -32,6 +26,15 @@
     https://react.dev/learn/writing-markup-with-jsx
 
 ### Unresolved Issues
+
+- remaining question from `0605_react-with-arrays/react-with-arrays_journal-app-entries-array`:
+
+(If you are using this template: How can you render a <Divider /> component between each entry?
+Don't break the flexbox layout (a Fragment might help) - DONE)
+
+> > > Avoid having a divider below the last or above the first entry
+
+- I finally copied the code from Sabeth and still don't understand!
 
 - `053/react-props_button`
 
