@@ -8,37 +8,13 @@ export default function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    // const form = event.target;
-    setHoliday(event.target.holiday.value);
-    setDate(event.target.date.value);
+    const form = event.target;
+    console.log(form);
+    setHoliday(form.elements.holiday.value);
+    setDate(form.elements.date.value);
+    form.reset();
+    form.holiday.focus();
   }
-
-  // refactor the handleSubmit function so that
-  // the App component has access to the submitted data,
-
-  // the submitted data is dynamically rendered
-  // in the respective output fields below the form.
-  // You can use the following hints as guideline:
-
-  // Create a separate state for holiday and date.
-
-  // The handleSubmit function sets both states with
-  // its corresponding values.
-
-  // Do you remember how to access the values of the target fields?
-
-  // Don't forget to dynamically render the state variables
-  // in the output area.
-
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-  //   const form = event.target;
-  //   console.log(form);
-  //   setHoliday(form.elements.holiday.value);
-  //   setDate(form.elements.date.value);
-  //   form.reset();
-  //   form.holiday.focus();
-  // }
 
   return (
     <div className="container">
@@ -69,9 +45,7 @@ export default function App() {
       <h2>Output of Submitted Data</h2>
       <p>
         Favourite Holiday:
-        <span className="output" key={"holiday"}>
-          {holiday}
-        </span>
+        <span className="output">{holiday}</span>
       </p>
       <p>
         Date: <span className="output">{date}</span>
