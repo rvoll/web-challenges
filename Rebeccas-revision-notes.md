@@ -4,7 +4,7 @@
 
 ### DO NEXT:
 
-- do `0605_react-with-arrays` challenges, fruits DONE, `journal-app-entries-array` almost DONE, see above
+- do
 
 > after that do `0604_react-state-2` and `state-3` challenges
 
@@ -12,22 +12,34 @@
 
 - If time allows:
 
-  - read Handouts:
+- Experience with JavaScript:
 
-    - React Basics
-    - React Props
-    - React Nesting
-    - React State 1
-    - React State 2
+Understanding JavaScript basics like arrow functions and closures would help you grasp why this pattern is used.
 
-  - revise HTML: \
-    https://developer.mozilla.org/en-US/docs/Web/HTML/Element \
-  - revise JSX: \
-    https://react.dev/learn/writing-markup-with-jsx
+(Arrowfunctions and brackets in previous state updates)
+
+- read Handouts:
+
+  - React Basics
+  - React Props
+  - React Nesting
+  - React State 1
+  - React State 2
+
+- revise HTML: \
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element \
+- revise JSX: \
+  https://react.dev/learn/writing-markup-with-jsx
 
 ### Unresolved Issues
 
+- **BIG PROBLEMS WITH 0605_react-with-arrays CHALLENGES:**
+
+> go through react-with-arrays again and maybe look at JS-Array Methods again!
+
 - remaining question from `0605_react-with-arrays/react-with-arrays_journal-app-entries-array`:
+
+  - `0605_react-with-arrays` challenges, fruits DONE, `journal-app-entries-array` almost DONE, see above
 
 (If you are using this template: How can you render a <Divider /> component between each entry?
 Don't break the flexbox layout (a Fragment might help) - DONE)
@@ -35,6 +47,8 @@ Don't break the flexbox layout (a Fragment might help) - DONE)
 > > > Avoid having a divider below the last or above the first entry
 
 - I finally copied the code from Sabeth and still don't understand!
+
+- also didn't get the next challenge(s) of react-with-arrays at all and discovered suboptimal code in the ones I managed
 
 - `053/react-props_button`
 
